@@ -6,6 +6,10 @@ tips on how to do things using `todbot's staroids <https://github.com/todbot/cir
 
 This has been manually tested on CircuitPython v7.0.0-alpha.6.
 
+.. raw:: html
+
+  <img src="./docs/pybadge_in_action.jpg" />
+
 Installation
 ::::::::::::
 
