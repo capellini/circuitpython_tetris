@@ -197,8 +197,8 @@ class Game:
     Handle top-level aspects of the game, logic of when to move pieces,
     and keep score.
     """
-    fps = 1500
-    key_fps = 75
+    fps = 500
+    key_fps = 50
 
     def __init__(self, height, width, keymap):
         self.height = height
@@ -364,7 +364,7 @@ class Game:
             self.counter = 0
 
         if self.state == game_state.playing:
-            if self._time_to_move(self.fps // self.level) or \
+            if self._time_to_move(self.fps // self.level * 3) or \
                (self._time_to_move(self.key_fps) and self.pressed_key == self.keymap.down):
                 self.tetris.move_down()
 
